@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Unauthorized Access";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Unauthorized Access</h1>
+    <p>You are not authorized to access this page.</p>
+    <button id="backToHome" class="btn btn-primary">Back to Home</button>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById('backToHome').addEventListener('click', function () {
+            window.location.href = '/';
+        });
+    </script>
+}
